@@ -1,0 +1,87 @@
+:root{
+    --Background-color : #030712;
+    --Text-color : #f8fafc;
+    --Primary-color : #f97316;
+    --Secondary-color : #0284c7;
+}
+
+
+body{
+    background-color: var(--Background-color);
+    color: var(--Text-color);
+    padding: 20px;
+}
+
+h1{
+    font-size: 45px;
+}
+
+.heading{
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: var(--Primary-color);
+}
+
+H1,.heading, .subheading, .features{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+.subheading{
+    font-size: 20px;
+    font-style: italic;
+}
+
+p{
+    font-size: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 200;
+}
+
+
+.part{
+    background-color: var(--Background-color);
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+}
+
+.card_heading{
+    text-align: center;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+.content1,.content2,.content3{
+    margin: 20px;
+    background-color: var(--Secondary-color);
+    border-radius: 8px;
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 700px;
+}
+
+.content1:hover{
+    background-color: #0369a1;
+}
+
+.content2:hover{
+    background-color: #0369a1;
+}
+
+.content3:hover{
+    background-color: #0369a1;
+}
+
+
+.features{
+   font-size: 35px;
+   padding-top: 20px;
+   color: #0284c7;
+   text-decoration: underline;
+}
