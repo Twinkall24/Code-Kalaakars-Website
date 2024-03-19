@@ -1,4 +1,190 @@
-:root{
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap');
+*{
+    text-align: center;
+    font-family:"Poppins",sans-serif;
+}
+html,body{
+    display: grid;
+    place-items:center;
+}
+    body {
+    background:var(--Background-color);
+    color:var(--Text-color);
+    text-align: center;
+    margin-top:2px;
+  }
+  
+  img{
+    width:200px;
+    height:200px;
+    border-radius : 50%;
+    margin:25px;
+  }
+  
+  .members {
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    font-family: "Libre Bodoni", serif
+  }
+  
+  .member{
+    margin : 10px;
+    flex-direction : column;
+    align-items : center;
+    justify-content : center;
+    gap : 10px
+  }
+  h2,p{
+    justify-content: center;
+  }
+h1{
+    text-align:center;
+}
+hr{
+    width:175px;
+}
+.fa-youtube{
+    color:red;
+    background: var(--Text-color);
+    height:40px;
+    width:40px;
+    border-radius: 50%;
+}
+.name{
+    margin: 10px auto;
+}
+.fa-instagram{
+    background: linear-gradient(to bottom,#f70776,#ffc93c,#9818d6);
+    height:40px;
+    width:40px;
+    display:block;
+    text-align:center;
+    border-radius:50%;
+    box-shadow:0 10px 10px var(--Background-color);
+    color:var(--Text-color);
+}
+.fa-linkedin{
+    background: var(--Text-color);
+    color:var(--Secondary-color);
+    height:40px;
+    width:40px;
+    border-radius: 50%;
+}
+.fa-x-twitter {
+  background: var(--Text-color);
+    color:var(--Background-color);
+    height:40px;
+    width:40px;
+    border-radius: 50%;
+}
+.wrapper{
+    display:flex;
+    margin:20px;
+    align-items : center;
+    margin-left: 300px;
+}
+.icon{
+    margin:auto;
+    display: flex;
+    align-items : center;
+    justify-content : center;
+    margin-left: 50px;
+    margin-right: 5px;
+}
+.wrapper .icon span{
+    height:40px;
+    width:40px;
+    display:block;
+    background:var(--Secondary-color);
+    border-radius: 50%;
+    box-shadow: 0 10px 10px var(--Background-color);
+}
+.wrapper .icon span i{
+  font-size:28px;  
+  line-height: 40px;
+}
+.name{
+    margin:10px;
+    align-items : center;
+}
+#button{
+    text-align: center;
+    margin-top: 5px;
+}
+.c-button {
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 0.9em 1.6em;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+    background-color:var(--Background-color);
+  }
+  
+  .c-button--gooey {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 4px solid var(--Secondary-color);
+    border-radius: 10px;
+    position: relative;
+    transition: all 700ms ease;
+  }
+  
+  .c-button--gooey .c-button__blobs {
+    height: 100%;
+    filter: url(#goo);
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: -3px;
+    right: -1px;
+    z-index: -1;
+  }
+  
+  .c-button--gooey .c-button__blobs div {
+    background-color:var(--Secondary-color);
+    width: 34%;
+    height: 100%;
+    border-radius: 100%;
+    position: absolute;
+    transform: scale(1.4) translateY(125%) translateZ(0);
+    transition: all 700ms ease;
+  }
+  
+  .c-button--gooey .c-button__blobs div:nth-child(1) {
+    left: -5%;
+  }
+  
+  .c-button--gooey .c-button__blobs div:nth-child(2) {
+    left: 30%;
+    transition-delay: 60ms;
+  }
+  
+  .c-button--gooey .c-button__blobs div:nth-child(3) {
+    left: 66%;
+    transition-delay: 25ms;
+  }
+  
+  .c-button--gooey:hover {
+    color:var(--Background-color);
+  }
+  
+  .c-button--gooey:hover .c-button__blobs div {
+    transform: scale(1.4) translateY(0) translateZ(0);
+  }
+  #color{
+    text-decoration: none;
+    color: var(--Text-color);
+  }
+
+  /* mitali */
+
+  :root{
     --Background-color : #030712;
    --Text-color : #f8fafc;
    --Primary-color : #f97316;
@@ -63,7 +249,7 @@ p{
     padding: 10px;
     padding-right: 20px;
     padding-left: 20px;
-    width: 700px;
+    width: 400px;
 }
 
 .content1:hover{
