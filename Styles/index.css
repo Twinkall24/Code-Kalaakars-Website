@@ -144,6 +144,7 @@ img{
   text-align: center;
   color: var(--background);
   background-color: var(--primary-color);
+  color: var(--background)!important;
 }
 
 p{
@@ -152,4 +153,5 @@ p{
   padding-left:15px;
   padding-right:15px;
   background-color: var(--primary-color);
+  font-size: large;
 }
