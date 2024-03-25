@@ -1,157 +1,188 @@
 :root{
-    --background : #030712;
-    --text-color : #f8fafc;
-    --primary-color : #f97316;
-    --secondary-color : #0284c7;
+  --background : #030712;
+  --text-color : #f8fafc;
+  --primary-color : #f97316;
+  --secondary-color : #0284c7;
 }
 
 *{
-    background: var(--background);
-    color : var(--text-color)
+  background: var(--background);
+  color : var(--text-color)
 }
 
 h1,h2{
-  color: var(--text-color)!important;
-  margin:10px,0;
-  text-align: center;
-  font-family: "Montserrat",sans-serif;
+color: var(--text-color)!important;
+margin:10px,0;
+text-align: center;
+font-family: "Montserrat",sans-serif;
 }
 
 #Hero-text{
-    text-align: center;
+  text-align: center;
 }
 
 /* body
 {
-  background-color: white;
-  background-position: center;
-  box-sizing: border-box;
-  font-family: sans-serif;
+background-color: white;
+background-position: center;
+box-sizing: border-box;
+font-family: sans-serif;
 } */
 
- /* Navbar CSS */
+/* Navbar CSS */
 .menu-bar
 {
-  background: var(--background);
-  text-align: center;
+background: var(--background);
+text-align: center;
 }
 .menu-bar ul
 {
-  display: inline-flex;
-  list-style: none;
-  color: #f8fafc;
+display: inline-flex;
+list-style: none;
+color: #f8fafc;
 }
 .menu-bar ul li
 {
-  width: 165px;
-  margin: 1px;
-  padding: 12px;
+width: 165px;
+margin: 1px;
+padding: 12px;
 }
 .menu-bar ul li a
 {
-  text-decoration: none;
-  color:white;
+text-decoration: none;
+color:white;
 }
 .menu-bar ul li:hover
 {
-  background-color:#f97316;
-  color:white;
+background-color:#f97316;
+color:white;
 }
 .sub-menu-1 
 {
-  display: none;
+display: none;
 }
 .menu-bar ul li:hover .sub-menu-1 
 {
-  display: block;position:absolute;
-  background-color:black;
-  margin-top: 10px;
-  margin-left: 10px;
+display: block;position:absolute;
+background-color:black;
+margin-top: 10px;
+margin-left: 10px;
 }
 .menu-bar ul li:hover .sub-menu-1 ul{
-  display:block;
-  margin:10px;
+display:block;
+margin:10px;
 }
 .menu-bar ul li:hover .sub-menu-1 ul li a:hover
 {
-  color: black;
+color: black;
 }
 .sub-menu-2 
 {
-  display: none;
+display: none;
 }
 .menu-bar ul li:hover .sub-menu-2 
 {
-  display: block;position:absolute;
-  background-color:black;
-  margin-top: 10px;
-  margin-left: 10px;
+display: block;position:absolute;
+background-color:black;
+margin-top: 10px;
+margin-left: 10px;
 }
 .menu-bar ul li:hover .sub-menu-2 ul{
-  display:block;
-  margin:10px;
+display:block;
+margin:10px;
 }
 .menu-bar ul li:hover .sub-menu-2 ul li a:hover
 {
-  color: black;
+color: black;
 }
 .logo{
-  position:fixed;
-  height:auto;
-  left:50px;
-  width:48px;
-  height: 48px;
-  border-radius: 50%;
+position:fixed;
+height:auto;
+left:50px;
+width:48px;
+height: 48px;
+border-radius: 50%;
 }
 
 /* Home Page */
 
-.firstline{
-  padding-top: 5%;
-}
+.back{
+  background-image: url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  /* background: linear-gradient(45deg, rgb(6, 189, 230) 0%, rgb(0, 10, 14) 100%);  */
+  background-size: cover;
+  background-position: center;  
 
-
-img{
   display: block;
-  height:150px;
-  width: 200px;
-  margin-left: auto;
-  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+  height: 100vh;
+}/*  change */
+
+.homepage-head{
+  background: none;
+}/*  change */
+.heading{
+  display: block;
+  background: none;
+}/*  change */
+.firstline{
+padding-top: 10%;
+background: none;/*  change */
 }
+
+
+/* img{
+display: block;
+height:150px;
+width: 200px;
+margin-left: auto;
+margin-right: auto;
+} */
 
 .card-container{
-
-  display: flex;
-  justify-content: center;
+  padding-top: 60px;/*  change */
+  background: none;/*  change */
+display: flex;
+justify-content: center;
 }
 
 .card{
-  background-color: var(--primary-color);
-  height: 225px;
-  width:350px;
-  margin-left: 3.5%;
-  margin-right: 3.5%;
-  margin-top: 2.5%;
-  border-radius: 10px;
-  transition: transform 0.6s ease;
+  backdrop-filter: blur(5px) saturate(100%);/*  change */
+-webkit-backdrop-filter: blur(5px) saturate(100%);/*  change */
+background-color: rgba(0, 3, 10, 0.25);
+border: 1px solid rgba(0, 13, 16, 0.6);
+transition: all .3s ease;  
+/* background-color: var(--primary-color); */
+height: 225px;
+width:350px;
+margin-left: 3.5%;
+margin-right: 3.5%;
+margin-top: 2.5%;
+border-radius: 10px;
+transition: transform 0.6s ease;
 }
 
 .card:hover{
-  transform: scale(1.1);
+transform: scale(1.1);
+transform: scale(1.125);
+border-color: rgba(255, 255, 255, 0.9);
+transition: all .3s ease;
 }
 
 .card-heading{
-  text-align: center;
-  color: var(--background);
-  background-color: var(--primary-color);
-  color: var(--background)!important;
+text-align: center;
+background: none;
+/* background-color: var(--primary-color); */
+color: var(--primary-color) !important;
 }
 
 p{
-  text-align: justify;
-  text-justify: distribute-all-lines;
-  padding-left:15px;
-  padding-right:15px;
-  background-color: var(--primary-color);
-  font-size:20px;
+text-align: justify;
+text-justify: distribute-all-lines;
+padding-left:15px;
+padding-right:15px;
+background-color: var(--primary-color);
+font-size:20px;
+background: none;
 }
