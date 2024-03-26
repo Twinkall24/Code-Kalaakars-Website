@@ -271,3 +271,149 @@ p{
    color: var(--Secondary-color);
    text-decoration: underline;
 }
+
+/* Contact us Harshi */
+.outer-div{
+  display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+    border: 1px solid var(--Secondary-color);
+    background-image: linear-gradient(-45deg, var(--Secondary-color), var(--Background-color));
+    border-radius: 100px;
+    padding-top: 80px;
+    padding-bottom: 70px;
+    box-sizing: border-box;
+}
+
+
+
+.inner-div1{
+  justify-content: center;
+  padding-bottom: 70px;
+  padding-right: 50px;
+}
+.contact{
+  font-size: 45px;
+}
+div{
+  margin-top: 15px;
+  font-family: ;
+  font-size: 20px;
+}
+
+.form-container {
+  width: 400px;
+  border: 2px solid;
+  border-color: var(--Background-color);
+  padding: 32px 24px;
+  font-size: 14px;
+  font-family: inherit;
+  color: var(--Text-color);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  background-size: 200% 100%;
+  animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.form-container button:active {
+  scale: 0.95;
+}
+
+.form-container .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-container .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.form-container .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--Text-color);
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.form-container .form-group input {
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: var(--Text-color);
+  font-family: inherit;
+  background-color: transparent;
+  border: 1px solid var(--Background-color);
+}
+
+.form-container .form-group textarea {
+  padding: 12px 16px;
+  border-radius: 8px;
+  resize: none;
+  color: var(--Text-color);
+  height: 96px;
+  border: 1px solid var(--Background-color);
+  background-color: transparent;
+  font-family: inherit;
+}
+
+.form-container .form-group input::placeholder {
+  opacity: 0.5;
+}
+
+.form-container .form-group input:focus {
+  outline: none;
+  border-color: #e81cff;
+}
+
+.form-container .form-group textarea:focus {
+  outline: none;
+  color: var(--Text-color);
+  border-color: #e81cff;
+}
+
+.form-container .form-submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  font-family: inherit;
+  color: var(--Text-color);
+  font-weight: 600;
+  width: 40%;
+  background-image: linear-gradient(180deg, var(--Secondary-color), var(--Background-color));
+  border: 1px solid #414141;
+  padding: 12px 16px;
+  font-size: 15px;
+  gap: 8px;
+  margin-top: 8px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.form-container .form-submit-btn:hover {
+  border-color: rgb(43, 43, 89);
+}
+
+
+
