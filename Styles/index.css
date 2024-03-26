@@ -106,12 +106,11 @@ border-radius: 50%;
 
 /* Home Page */
 
-.back{
+#background{
   background-image: url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   /* background: linear-gradient(45deg, rgb(6, 189, 230) 0%, rgb(0, 10, 14) 100%);  */
   background-size: cover;
   background-position: center;  
-
   display: block;
   align-items: center;
   justify-content: center;
@@ -122,12 +121,14 @@ border-radius: 50%;
 .homepage-head{
   background: none;
 }/*  change */
+
 .heading{
   display: block;
   background: none;
 }/*  change */
+
 .firstline{
-padding-top: 10%;
+padding-top: 5%;
 background: none;/*  change */
 }
 
@@ -141,10 +142,11 @@ margin-right: auto;
 } */
 
 .card-container{
-  padding-top: 60px;/*  change */
-  background: none;/*  change */
-display: flex;
-justify-content: center;
+  width: 1200px !important;
+  padding: 0 !important;
+  margin-right: auto;
+  margin-left: auto;
+  background: none;
 }
 
 .card{
@@ -154,8 +156,10 @@ background-color: rgba(0, 3, 10, 0.25);
 border: 1px solid rgba(0, 13, 16, 0.6);
 transition: all .3s ease;  
 /* background-color: var(--primary-color); */
-height: 225px;
-width:350px;
+height: 275px;
+max-width: 450px;
+border: 0;
+width: 100%;
 margin-left: 3.5%;
 margin-right: 3.5%;
 margin-top: 2.5%;
@@ -163,10 +167,18 @@ border-radius: 10px;
 transition: transform 0.6s ease;
 }
 
+.cards-grid{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  background: none;
+  gap: 40px;
+  padding: 5%;
+}
+
 .card:hover{
 transform: scale(1.1);
 transform: scale(1.125);
-border-color: rgba(255, 255, 255, 0.9);
+border: 1px solid white;
 transition: all .3s ease;
 }
 
@@ -186,3 +198,14 @@ background-color: var(--primary-color);
 font-size:20px;
 background: none;
 }
+
+/* #container-title{
+  text-align: center;
+  padding: 0 !important;
+  margin-top: 2.5%;
+  margin-bottom: 0; 
+  font-size: 25px;
+  color: var(--secondary-color);
+  font-weight: 600;
+  line-height: 60px;
+} */
