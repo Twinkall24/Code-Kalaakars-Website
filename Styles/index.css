@@ -6,8 +6,10 @@
 }
 
 *{
-  background: var(--background);
-  color : var(--text-color)
+  color : var(--text-color);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 h1,h2{
@@ -21,18 +23,14 @@ font-family: "Montserrat",sans-serif;
   text-align: center;
 }
 
-/* body
+body
 {
-background-color: white;
-background-position: center;
-box-sizing: border-box;
-font-family: sans-serif;
-} */
+background-color: var(--background);
+}
 
 /* Navbar CSS */
 .menu-bar
 {
-background: var(--background);
 text-align: center;
 }
 .menu-bar ul
@@ -64,7 +62,6 @@ display: none;
 .menu-bar ul li:hover .sub-menu-1 
 {
 display: block;position:absolute;
-background-color:black;
 margin-top: 10px;
 margin-left: 10px;
 }
@@ -83,7 +80,6 @@ display: none;
 .menu-bar ul li:hover .sub-menu-2 
 {
 display: block;position:absolute;
-background-color:black;
 margin-top: 10px;
 margin-left: 10px;
 }
@@ -107,29 +103,27 @@ border-radius: 50%;
 /* Home Page */
 
 #background{
-  background-image: url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  /* background: linear-gradient(45deg, rgb(6, 189, 230) 0%, rgb(0, 10, 14) 100%);  */
-  background-size: cover;
-  background-position: center;  
-  display: block;
-  align-items: center;
-  justify-content: center;
+  background: url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat center center/cover;
+  position: fixed;
   z-index: -1;
-  height: 100vh;
-}/*  change */
+  top: 0;
+  left: 0;
+  height : 100vh;
+  width : 100vw;
+}
 
 .homepage-head{
   background: none;
-}/*  change */
+}
 
 .heading{
   display: block;
   background: none;
-}/*  change */
+}
 
 .firstline{
 padding-top: 5%;
-background: none;/*  change */
+background: none;
 }
 
 
@@ -146,12 +140,12 @@ margin-right: auto;
   padding: 0 !important;
   margin-right: auto;
   margin-left: auto;
-  background: none;
+  background: transparent;
 }
 
 .card{
-  backdrop-filter: blur(5px) saturate(100%);/*  change */
--webkit-backdrop-filter: blur(5px) saturate(100%);/*  change */
+  backdrop-filter: blur(5px) saturate(100%);
+-webkit-backdrop-filter: blur(5px) saturate(100%);
 background-color: rgba(0, 3, 10, 0.25);
 border: 1px solid rgba(0, 13, 16, 0.6);
 transition: all .3s ease;  
@@ -170,7 +164,7 @@ transition: transform 0.6s ease;
 .cards-grid{
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  background: none;
+  background: transparent;
   gap: 40px;
   padding: 5%;
 }
