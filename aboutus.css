@@ -272,7 +272,7 @@ p{
    text-decoration: underline;
 }
 
-/* Contact us Harshi */
+/* Contact us */
 .outer-div{
   display: flex;
     justify-content: space-evenly;
@@ -294,12 +294,14 @@ p{
   padding-right: 50px;
 }
 .contact{
-  font-size: 45px;
+  font-size: 50px;
 }
+
 div{
   margin-top: 15px;
-  font-family: ;
-  font-size: 20px;
+  font-family: sans-serif;
+  font-style: italic;
+  font-size: 25px;
 }
 
 .form-container {
