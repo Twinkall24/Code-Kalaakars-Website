@@ -153,13 +153,12 @@ body {
   color: var(--text-color);
 }
 
-/* #container-title{
-  text-align: center;
-  padding: 0 !important;
-  margin-top: 2.5%;
-  margin-bottom: 0; 
-  font-size: 25px;
-  color: var(--secondary-color);
-  font-weight: 600;
-  line-height: 60px;
-} */
+@media screen and (max-width:750px) {
+  .logo{
+    display: none;
+  }
+
+  #navbar{
+    justify-content: center;
+  }
+}
