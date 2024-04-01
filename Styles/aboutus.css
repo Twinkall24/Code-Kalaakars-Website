@@ -8,17 +8,14 @@
   body {
     background:var(--Background-color);
     color:var(--Text-color);
-    text-align: center;
-    /* text-align: center;
-    font-family:"Poppins",sans-serif; */
   }
   
   .member_photo{
     aspect-ratio: 1;
     height:200px;
     border-radius : 50%;
-    margin:25px;
   }
+
   #vency_photo{
     background: url("https://iili.io/JwAS8Mu.md.jpg");
     background-size: 250px 250px;
@@ -32,26 +29,22 @@
     justify-content : center;
     font-family: "Libre Bodoni", serif;
     flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 4rem;
   }
   
   .member{
-    margin : 10px;
     display: flex;
     flex-direction : column;
     align-items : center;
     justify-content : center;
-    gap : 2px
+    gap: 0.5rem;
   }
-  h2,p{
-    justify-content: center;
-    margin: 0;
-  }
+ 
 h1{
     text-align:center;
 }
-hr{
-    width:175px;
-}
+
 .fa-youtube{
     color:red;
     background: var(--Text-color);
@@ -116,9 +109,16 @@ hr{
     margin:10px;
     align-items : center;
 }
+
+#btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
 #button{
-    text-align: center;
-    margin-top: 5px;
+    margin: auto;
 }
 .c-button {
     font-weight: 700;
@@ -203,7 +203,7 @@ h1{
     color: var(--Primary-color);
 }
 
-H1,.heading, .subheading, .features{
+h1,.heading, .subheading, .features{
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
